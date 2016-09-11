@@ -24,7 +24,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([STNSlideMenuProfileTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([STNSlideMenuProfileTableViewCell class])];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([STNSlideMenuTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([STNSlideMenuTableViewCell class])];
     
-    [self.view setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.17 green:0.20 blue:0.24 alpha:1.00]];
     [self.tableView setSeparatorColor:[UIColor whiteColor]];
 }
 

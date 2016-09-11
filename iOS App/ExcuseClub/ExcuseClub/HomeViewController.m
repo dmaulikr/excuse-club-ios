@@ -115,7 +115,7 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     // Background color
-    view.tintColor = [UIColor redColor];
+    view.tintColor = [UIColor colorWithRed:0.17 green:0.20 blue:0.24 alpha:1.00];
     
     // Text Color
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;

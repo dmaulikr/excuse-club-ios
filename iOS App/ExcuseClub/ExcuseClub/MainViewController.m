@@ -58,7 +58,7 @@
 //    [button setTitle:[NSString fontAwesomeIconStringForEnum:FABars] forState:UIControlStateNormal];
 //    
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [button setTitleColor:[UIColor colorWithRed:0.17 green:0.20 blue:0.24 alpha:1.00] forState:UIControlStateHighlighted];
     [button.titleLabel setFont:[UIFont fontWithName:@"Zapfino" size:50]];
     [button setTitle:@"=" forState:UIControlStateNormal];
     
