@@ -106,6 +106,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Gotcha' Back!"/>
+                                <connections>
+                                    <action selector="gotchaButtonPressed:" destination="EPh-Je-9u6" eventType="touchUpInside" id="fbZ-Su-L0s"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-tA-vbM">
                                 <rect key="frame" x="20" y="280" width="560" height="27"/>

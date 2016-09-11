@@ -36,4 +36,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)gotchaButtonPressed:(id)sender {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Imagine this is a facebook check-in prompt" message:@"I fell asleep on the floor and didn't do it" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Share" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 @end
