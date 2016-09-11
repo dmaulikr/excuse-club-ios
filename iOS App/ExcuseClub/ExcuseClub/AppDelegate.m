@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    NSDictionary * navBarTitleTextAttributes =
+    @{ NSForegroundColorAttributeName : [UIColor whiteColor],
+       NSFontAttributeName            : [UIFont fontWithName:@"Zapfino" size:23] };
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:navBarTitleTextAttributes];
+    
     return YES;
 }
 
