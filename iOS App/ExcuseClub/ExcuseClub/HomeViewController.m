@@ -53,6 +53,14 @@
     }
     
     [self.locationManager startUpdatingLocation];
+    
+    // [[ExcuseAPI client] registerUserWithName:@"John Doe" andPhone:@"+11231231234" success:nil failure:nil];
+    // [[ExcuseAPI client] createBuddies:@[@{@"name" : @"John Doe", @"phone" : @"+13213213210"}] success:nil failure:nil];
+    // [[ExcuseAPI client] getBuddies:nil failure:nil];
+    // [[ExcuseAPI client] createExcuseWithStart:[NSDate date] andEnd:[NSDate date] andBuddies:@[@{@"name" : @"John Doe", @"phone" : @"+13213213210"}] success:nil failure:nil];
+    // [[ExcuseAPI client] getBegs:nil failure:nil];
+    // [[ExcuseAPI client] getBegWithId:2 success:nil failure:nil];
+    // [[ExcuseAPI client] broWithId:2 success:nil failure:nil];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
