@@ -24,6 +24,7 @@
 		AFE0D9771D84E1BD00A4058F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE0D9761D84E1BD00A4058F /* MapKit.framework */; };
 		AFE0D97B1D8502A900A4058F /* BuddyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0D9791D8502A900A4058F /* BuddyTableViewCell.m */; };
 		AFE0D97C1D8502A900A4058F /* BuddyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE0D97A1D8502A900A4058F /* BuddyTableViewCell.xib */; };
+		AFE0D9961D8531C000A4058F /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0D9951D8531C000A4058F /* RequestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		AFE0D9781D8502A900A4058F /* BuddyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyTableViewCell.h; sourceTree = "<group>"; };
 		AFE0D9791D8502A900A4058F /* BuddyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyTableViewCell.m; sourceTree = "<group>"; };
 		AFE0D97A1D8502A900A4058F /* BuddyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuddyTableViewCell.xib; sourceTree = "<group>"; };
+		AFE0D9941D8531C000A4058F /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		AFE0D9951D8531C000A4058F /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		C6ACFB17AEC5737E1E1DA203 /* libPods-ExcuseClub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExcuseClub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +129,8 @@
 				AFE0D97A1D8502A900A4058F /* BuddyTableViewCell.xib */,
 				82D2E5191D850DB600A5BA1E /* ExcuseAPI.h */,
 				82D2E51A1D850DB600A5BA1E /* ExcuseAPI.m */,
+				AFE0D9941D8531C000A4058F /* RequestViewController.h */,
+				AFE0D9951D8531C000A4058F /* RequestViewController.m */,
 			);
 			path = ExcuseClub;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE0D9961D8531C000A4058F /* RequestViewController.m in Sources */,
 				AFE0D94D1D84BA3C00A4058F /* AppDelegate.m in Sources */,
 				AFE0D9741D84DC7800A4058F /* STNSlideMenuTableViewCell.m in Sources */,
 				AFE0D97B1D8502A900A4058F /* BuddyTableViewCell.m in Sources */,

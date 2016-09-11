@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vWs-zd-8PY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vWs-zd-8PY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -73,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="3468" y="-40"/>
         </scene>
-        <!--View Controller-->
+        <!--Request View Controller-->
         <scene sceneID="8rc-QX-qa1">
             <objects>
-                <viewController id="EPh-Je-9u6" sceneMemberID="viewController">
+                <viewController id="EPh-Je-9u6" customClass="RequestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oDE-gI-MMF"/>
                         <viewControllerLayoutGuide type="bottom" id="Btw-79-VRw"/>
@@ -85,15 +86,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lik-Mi-x08">
-                                <rect key="frame" x="226" y="138" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-eb-6OG">
+                                <rect key="frame" x="0.0" y="556" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UpK-DJ-laV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Nah"/>
+                                <connections>
+                                    <action selector="nahButtonPressed:" destination="EPh-Je-9u6" eventType="touchUpInside" id="V7z-dG-J28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGo-LZ-cMH">
+                                <rect key="frame" x="300" y="556" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.00068939877130000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VHy-LW-Gub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Gotcha' Back!"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-tA-vbM">
+                                <rect key="frame" x="20" y="280" width="560" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deadpool" translatesAutoresizingMaskIntoConstraints="NO" id="UDL-Z4-MDg">
+                                <rect key="frame" x="200" y="40" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CY7-ED-xXl"/>
+                                    <constraint firstAttribute="height" constant="200" id="jis-oo-sup"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UDL-Z4-MDg" firstAttribute="top" secondItem="oDE-gI-MMF" secondAttribute="bottom" constant="20" id="4B9-79-y3q"/>
+                            <constraint firstItem="sLH-tA-vbM" firstAttribute="top" secondItem="oDE-gI-MMF" secondAttribute="bottom" constant="49" id="JfB-x8-sqb"/>
+                            <constraint firstItem="UDL-Z4-MDg" firstAttribute="centerX" secondItem="9kU-rj-W5o" secondAttribute="centerX" id="MYt-0M-GI3"/>
+                            <constraint firstItem="Btw-79-VRw" firstAttribute="top" secondItem="VGo-LZ-cMH" secondAttribute="bottom" id="McC-VE-pkN"/>
+                            <constraint firstItem="FZP-eb-6OG" firstAttribute="width" secondItem="9kU-rj-W5o" secondAttribute="width" multiplier="0.5" id="Reb-ua-Bog"/>
+                            <constraint firstItem="Btw-79-VRw" firstAttribute="top" secondItem="FZP-eb-6OG" secondAttribute="bottom" id="TCX-XY-aDm"/>
+                            <constraint firstItem="FZP-eb-6OG" firstAttribute="leading" secondItem="9kU-rj-W5o" secondAttribute="leading" id="TRQ-w7-q9O"/>
+                            <constraint firstItem="VGo-LZ-cMH" firstAttribute="width" secondItem="9kU-rj-W5o" secondAttribute="width" multiplier="0.5" id="VAp-CH-lUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sLH-tA-vbM" secondAttribute="trailing" id="mDh-zc-sDU"/>
+                            <constraint firstAttribute="trailing" secondItem="VGo-LZ-cMH" secondAttribute="trailing" id="r4K-yk-jYj"/>
+                            <constraint firstItem="sLH-tA-vbM" firstAttribute="top" secondItem="UDL-Z4-MDg" secondAttribute="bottom" constant="40" id="srl-fF-mMW"/>
+                            <constraint firstItem="sLH-tA-vbM" firstAttribute="leading" secondItem="9kU-rj-W5o" secondAttribute="leadingMargin" id="vO9-br-Qvx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JfB-x8-sqb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="middleLable" destination="sLH-tA-vbM" id="PFG-y5-4k6"/>
+                        <outlet property="profileImageView" destination="UDL-Z4-MDg" id="rsb-in-Vk1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOJ-lY-SrQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,7 +224,7 @@
             </objects>
             <point key="canvasLocation" x="2656" y="720"/>
         </scene>
-        <!--ExcuseClub-->
+        <!--Excuse Buddies-->
         <scene sceneID="XhE-9I-aCz">
             <objects>
                 <viewController id="5gg-nv-ad3" customClass="HomeViewController" sceneMemberID="viewController">
@@ -266,7 +318,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="ExcuseClub" id="2HU-BJ-EJx"/>
+                    <navigationItem key="navigationItem" title="Excuse Buddies" id="2HU-BJ-EJx"/>
                     <connections>
                         <outlet property="mapView" destination="cme-PV-m3B" id="25k-vE-m43"/>
                         <outlet property="tableView" destination="Hk9-lA-xpI" id="hAm-RF-LGM"/>
@@ -295,4 +347,7 @@
             <point key="canvasLocation" x="2656" y="-720"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="deadpool" width="320" height="320"/>
+    </resources>
 </document>

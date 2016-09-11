@@ -29,7 +29,7 @@
 }
 
 - (void)setupDataSourceArray {
-    self.dataSourceArray = @[@"Home", @"Edit My Profile", @"Achievements", @"Notification Settings", @"Sign Out"];
+    self.dataSourceArray = @[@"ExcuseClub", @"Edit My Profile", @"Chat", @"Photo Cloud", @"Notification Settings", @"Sign Out"];
 }
 
 #pragma mark - UITableView delegate methods
@@ -41,7 +41,7 @@
     if (indexPath.row == 0) {
         cell = (STNSlideMenuProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([STNSlideMenuProfileTableViewCell class]) forIndexPath:indexPath];
         
-        [((STNSlideMenuProfileTableViewCell *)cell).nameLabel setText:@"John Doe"];
+        [((STNSlideMenuProfileTableViewCell *)cell).nameLabel setText:@"iLOVEunicornsxoxo"];
     } else {
         cell = (STNSlideMenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([STNSlideMenuTableViewCell class]) forIndexPath:indexPath];
         
