@@ -29,7 +29,7 @@
     
     self.navigationController.navigationBar.translucent = NO;
     
-    _buddiesArray = @[@"Bob Agent", @"Iron Man", @"Thor", @"Unicorn"];
+    _buddiesArray = @[@"Spider Man", @"Bob Agent", @"Unicorn"];
     _imagesArray = @[];
     
     [self.tableView setDelegate:self];
