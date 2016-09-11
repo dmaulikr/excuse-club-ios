@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F2C341D357E2D2A13F682AA /* libPods-ExcuseClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ACFB17AEC5737E1E1DA203 /* libPods-ExcuseClub.a */; };
+		82D2E51B1D850DB600A5BA1E /* ExcuseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2E51A1D850DB600A5BA1E /* ExcuseAPI.m */; };
 		AFE0D94A1D84BA3B00A4058F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0D9491D84BA3B00A4058F /* main.m */; };
 		AFE0D94D1D84BA3C00A4058F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0D94C1D84BA3C00A4058F /* AppDelegate.m */; };
 		AFE0D9531D84BA3C00A4058F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE0D9511D84BA3C00A4058F /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		0C7E7B9C9CCA431A310BA670 /* Pods-ExcuseClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcuseClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExcuseClub/Pods-ExcuseClub.release.xcconfig"; sourceTree = "<group>"; };
 		12A1C8F77FABD50DB726F632 /* Pods-ExcuseClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcuseClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExcuseClub/Pods-ExcuseClub.debug.xcconfig"; sourceTree = "<group>"; };
+		82D2E5191D850DB600A5BA1E /* ExcuseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcuseAPI.h; sourceTree = "<group>"; };
+		82D2E51A1D850DB600A5BA1E /* ExcuseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcuseAPI.m; sourceTree = "<group>"; };
 		AFE0D9451D84BA3A00A4058F /* ExcuseClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcuseClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE0D9491D84BA3B00A4058F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFE0D94B1D84BA3B00A4058F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				AFE0D9781D8502A900A4058F /* BuddyTableViewCell.h */,
 				AFE0D9791D8502A900A4058F /* BuddyTableViewCell.m */,
 				AFE0D97A1D8502A900A4058F /* BuddyTableViewCell.xib */,
+				82D2E5191D850DB600A5BA1E /* ExcuseAPI.h */,
+				82D2E51A1D850DB600A5BA1E /* ExcuseAPI.m */,
 			);
 			path = ExcuseClub;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				AFE0D9641D84C1AF00A4058F /* RightSlidingViewController.m in Sources */,
 				AFE0D96B1D84CC3E00A4058F /* HomeViewController.m in Sources */,
 				AFE0D9611D84C14500A4058F /* MainViewController.m in Sources */,
+				82D2E51B1D850DB600A5BA1E /* ExcuseAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

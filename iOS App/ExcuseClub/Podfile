@@ -2,9 +2,9 @@
 # platform :ios, '9.0'
 
 target 'ExcuseClub' do
- 
+
 pod 'HockeySDK'
-pod 'AFNetworking',  '2.6.3'
+pod 'AFNetworking'
 pod 'Reachability'
 pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod 'PureLayout'
